@@ -24,7 +24,8 @@ I found that when utilizing cdist to create the network of nearest neighbours, I
 This is the network created using 600 points of cdist (Number of Neighbours = 20).
 Although the network does not cover the entire area as seen in the picture below, it is able to pass all test cases.
 ![Cdist 600](https://github.com/Ritzzer764/2D_motion_planning/assets/114499776/de181525-babe-48c6-b1d9-88e6fda66a39)
-I could solve this issue of less area coverage by increasing the number of sample points, but the run-time increased so I did not increase the sample points.
+
+Observations: I could solve the issue of less area coverage by increasing the number of sample points, but the run-time increased so I did not increase the sample points. But overall the speed for running cdist over 600 points is much faster than running KNN for 5000 points.
 
 This is the shortest path for the test case (size_x = 10, size_y = 6, number of obstacles = 5):
 
