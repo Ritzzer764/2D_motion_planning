@@ -1,5 +1,8 @@
 # 2D_motion_planning
 
+
+
+
 ## Finding Nearest Neighbour
 I used two algorithms to find the nearest neighbors of points:-
 * K-Nearest Neighbors Algorithm - Faster run-time but requires more number of sample points 
@@ -11,7 +14,7 @@ While utilizing the KNN algorithm (Number of Neighbours = 20, radius = 0.4), I f
 ![Cdist 5000](https://github.com/Ritzzer764/2D_motion_planning/assets/114499776/511dc447-32d0-4505-9b77-858e1bcc39a4)
 Although KNN required more points, the network was able to cover a much larger area than cdist due to the number of points as seen above. 
 This is the shortest path for the test case (size_x = 10, size_y = 6, number of obstacles = 5):
-Path before post processing            |  Shortest path after path shortcutting
+Path before post-processing            |  Shortest path after path shortcutting
 :-------------------------:|:-------------------------:
 ![KNN_5000_spt](https://github.com/Ritzzer764/2D_motion_planning/assets/114499776/c9749596-9a23-4bea-b5a8-5dc0e3de8ec5)  | ![KNN_5000_opt](https://github.com/Ritzzer764/2D_motion_planning/assets/114499776/f43bdcec-84cd-4cea-9ac6-ae452c052091)
 
@@ -25,9 +28,32 @@ I could solve this issue of less area coverage by increasing the number of sampl
 
 This is the shortest path for the test case (size_x = 10, size_y = 6, number of obstacles = 5):
 
-Path before post processing            |  Shortest path after path shortcutting
+Path before post-processing            |  Shortest path after path shortcutting
 :-------------------------:|:-------------------------:
 ![spt_img_(10, 6, 5)](https://github.com/Ritzzer764/2D_motion_planning/assets/114499776/5d827173-8dd8-437f-9daa-3a2f4b825e2a) | ![Opt_img_(10, 6, 5)](https://github.com/Ritzzer764/2D_motion_planning/assets/114499776/e5ee4cce-2540-4a3f-9ee7-9f4adc9c6dac) 
+
+
+## Shortest-Path
+### Dijkstra's algorithm 
+
+## Post-Processing 
+There are two approaches I used to solve this problem : 
+* Shortcut Method
+* Two pointer Method
+
+### Shortcut Method
+1) Utilize the path from the Dijkstra's algorithm. Pick 2 random nodes and check if the line created by joining them is valid (:- does not intersect an obstacle)
+2) If the line created is valid, delete all elements between the two points in the line and update the path
+3) Repeat the process max_rep (250) times
+
+Constraints: Although this is very unlikely, the number of repetitions may not be enough to get the most optimal path. Since the shortcut points are 
+randomly chosen, we may have a case where a certain shortcut point is missed out
+
+### Two pointer Method
+1) Utilize the path from the Dijkstra's algorithm. Create a loop that checks if the line joining the left pointer and right pointer of the path is valid (:- does not intersect an obstacle)
+2) The right pointer is decremented until the line is valid. The valid point is now appended to the shortest path list, and the left pointer of the loop is the valid point. The right pointer is changed back to len(path) - 1
+3) This process is repeated until the left pointer is equal to len(path) - 1, and the shortest path is returned 
+
 
 
 
