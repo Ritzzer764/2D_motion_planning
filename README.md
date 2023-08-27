@@ -22,9 +22,9 @@ I used two algorithms to find the nearest neighbours of points:-
 ### Euclidean distance - cdist
 I found that when utilizing Euclidean distance (cdist) to create the network of nearest neighbours, I only had to use a few samples of points (600) to pass all test cases. 
 This is the network created using 600 points (Number of Neighbours per point = 60).
-Although the network does not cover the entire area as seen in the picture below, it is able to pass all test cases.
+The network covers almost the entire area as seen in the picture below. It is able to pass all test cases.
 ![Cdist Network 600](https://github.com/Ritzzer764/2D_motion_planning/assets/114499776/41032f19-2dcf-42ad-84d5-721f72cbe348)
-Observations: Overall the speed for running cdist over 600 points is faster than running KNN for 5000 points. The issue of less area coverage can be mitigated by increasing the number of sample points, but the run-time increased significantly so I refrained from doing so.
+Observations: Overall the speed for running cdist over 600 points is faster than running KNN for 5000 points. Even though the sample points are less (600), the network is vast as the number of neighbours considered is high (60)
 
 This is the images for the shortest path for the test case (size_x = 10, size_y = 6, number of obstacles = 5):
 
