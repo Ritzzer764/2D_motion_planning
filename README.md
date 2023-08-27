@@ -1,12 +1,14 @@
 # 2D_motion_planning
 
-[About](#about)
+* [About](#about)
 
-[Finding Nearest Neighbour](#finding-nearest-neighbour)
+* [Finding Nearest Neighbour](#finding-nearest-neighbour)
+    1)[K-Nearest Neighbors Algorithm](#k-Nearest_neighbors_algorithm)
+  
+    2)[Euclidean distance (cdist)](#euclidean_distance_(cdist))
+* [Shortest Path](#shortest-path)
 
-[Shortest Path](#shortest-path)
-
-[Post Processing](#post-processing)
+* [Post Processing](#post-processing)
 
 ## About
 Probabilistic Roadmap Algorithms serve a crucial role in robotics by facilitating the discovery of collision-free routes between an initial point and a final destination within obstacle-laden maps. Once a path devoid of collisions is established, the integration of a post-processing algorithm, such as the Path Shortcutting algorithm, becomes instrumental. This subsequent step aims to extract the most concise route between the starting point and the target by optimizing the path through sampled points.
