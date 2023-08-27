@@ -29,7 +29,7 @@ Observations: Overall the speed for running cdist over 600 points is much faster
 
 This is the images for the shortest path for the test case (size_x = 10, size_y = 6, number of obstacles = 5):
 
-Path before post-processing (cdist)            |  Shortest path after path shortcutting (cdist)
+Path before post-processing (Euclidean distance)            |  Shortest path after path shortcutting (Euclidean distance)
 :-------------------------:|:-------------------------:
 ![spt_img_(10, 6, 5)](https://github.com/Ritzzer764/2D_motion_planning/assets/114499776/5d827173-8dd8-437f-9daa-3a2f4b825e2a) | ![Opt_img_(10, 6, 5)](https://github.com/Ritzzer764/2D_motion_planning/assets/114499776/e5ee4cce-2540-4a3f-9ee7-9f4adc9c6dac) 
 
