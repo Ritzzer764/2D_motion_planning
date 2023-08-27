@@ -1,7 +1,15 @@
 # 2D_motion_planning
+
+[About](#about)
+
 [Finding Nearest Neighbour](#finding-nearest-neighbour)
 
 [Shortest Path](#shortest-path)
+
+[Post Processing](#post-processing)
+
+## About
+
 ## Finding Nearest Neighbour
 I used two algorithms to find the nearest neighbors of points:-
 * Euclidean distance (cdist) - Requires less number of sample points
@@ -33,7 +41,7 @@ Path before post-processing            |  Shortest path after path shortcutting
 ## Shortest Path
 ### Dijkstra's algorithm 
 
-## Post-Processing 
+## Post Processing 
 There are two approaches I used to solve this problem : 
 * Shortcut Method
 * Two pointer Method
