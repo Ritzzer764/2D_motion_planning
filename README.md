@@ -7,7 +7,7 @@ I used two algorithms to find the nearest neighbors of points:-
 ### Euclidean distance (cdist)
 I found that when utilizing cdist to create the network of nearest neighbors, I only had to use a few samples of points (600) to pass all test cases. 
 This is the network created using 600 points of cdist (Number of Neighbours = 20).
-Although the network does not cover the entire area as seen in the picture below, it is able to past all test cases (more pictures are there in the test_images folder).
+Although the network does not cover the entire area as seen in the picture below, it is able to pass all test cases.
 ![Cdist 600](https://github.com/Ritzzer764/2D_motion_planning/assets/114499776/de181525-babe-48c6-b1d9-88e6fda66a39)
 I could solve this issue of less area coverage by increasing the number of sample points, but the run-time became significantly slower.
 
