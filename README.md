@@ -8,7 +8,7 @@
   
     * [Euclidean distance (cdist)](#euclidean-distance---cdist)
 
-* [Dijkstra's Algorithm](#dijkstra%27s-algorithm)
+* [PRM Path](#prm-path)
 
 * [Post Processing](#post-processing)
 
@@ -42,10 +42,14 @@ Path before post-processing            |  Shortest path after path shortcutting
 :-------------------------:|:-------------------------:
 ![KNN_5000_spt](https://github.com/Ritzzer764/2D_motion_planning/assets/114499776/c9749596-9a23-4bea-b5a8-5dc0e3de8ec5)  | ![KNN_5000_opt](https://github.com/Ritzzer764/2D_motion_planning/assets/114499776/f43bdcec-84cd-4cea-9ac6-ae452c052091)
 
-## Dijkstra's Algorithm 
+## PRM Path
+### Dijkstra's algorithm
+Dijkstra's algorithm is like a treasure map for finding the shortest path from a starting point to a destination. It works by exploring neighboring points, picking the one that's closest to the starting point, and gradually moving towards the destination. It keeps track of distances as it goes along, ensuring it always takes the shortest route available. Once it reaches the goal, it traces back its steps to reveal the optimal path that leads from the source to the destination.
+The PRM path for the given problem is obtained using the Dijkstra's Algorithm
 
 ## Post Processing 
-There are two approaches I used to solve this problem : 
+The paths found by the planning methods of Section Path planning are collision-free but might not be optimal in terms of path length. 
+The following two approaches can be utilized to optimize the PRM path obtained: 
 * Shortcut Method
 * Two pointer Method
 
