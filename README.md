@@ -40,16 +40,18 @@ There are two approaches I used to solve this problem :
 
 ### Shortcut Method
 1) Utilize the path from the Dijkstra's algorithm. Pick 2 random nodes and check if the line created by joining them is valid (:- does not intersect an obstacle)
-2) If the line created is valid, delete all elements between the two points in the line and update the path
+2) If the line created is valid, delete all elements between the two points in the path, and update the path
 3) Repeat the process max_rep (250) times
 
 Constraints: Although this is very unlikely, the number of repetitions may not be enough to get the most optimal path. Since the shortcut points are 
-randomly chosen, we may have a case where a certain shortcut point is missed out
+randomly chosen, we may have a case where a certain shortcut point is missed out.
 
 ### Two pointer Method
 1) Utilize the path from the Dijkstra's algorithm. Create a loop that checks if the line joining the left pointer and right pointer of the path is valid (:- does not intersect an obstacle)
 2) The right pointer is decremented until the line is valid. The valid point is now appended to the shortest path list, and the left pointer of the loop is the valid point. The right pointer is changed back to len(path) - 1
-3) This process is repeated until the left pointer is equal to len(path) - 1, and the shortest path is returned 
+3) This process is repeated until the left pointer is equal to len(path) - 1, and the shortest path is returned
+
+Constraints: Although this method is very accurate as it always gives the most optimal path, it is less efficient than the shortcut method.
 
 
 
