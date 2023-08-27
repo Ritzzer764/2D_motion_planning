@@ -34,9 +34,9 @@ Path before post-processing (Euclidean distance)            |  Shortest path aft
 
 ### K-Nearest Neighbors Algorithm 
 
-While utilizing the KNN algorithm (Number of Neighbours = 20, radius = 0.4), I found that I had to use more sample points (5000) than cdist to pass all test cases (more pictures are there in the test_images folder).
+While utilizing the KNN algorithm (Number of Neighbours = 20, radius = 0.4), I found that I had to use more sample points (5000) than cdist to pass all test cases.
+The network area of KNN can be seen below
 ![Cdist 5000](https://github.com/Ritzzer764/2D_motion_planning/assets/114499776/511dc447-32d0-4505-9b77-858e1bcc39a4)
-Although KNN required more points and took more time to run, the network was able to cover a much larger area than cdist due to the number of points as seen above.
 
 This is the shortest path for the test case (size_x = 10, size_y = 6, number of obstacles = 5):
 Path before post-processing (KNN)          |  Shortest path after path shortcutting (KNN)
