@@ -1,5 +1,6 @@
 # 2D_motion_planning
 [Finding Nearest Neighbour](#finding-nearest-neighbour)
+
 [Shortest Path](#shortest-path)
 ## Finding Nearest Neighbour
 I used two algorithms to find the nearest neighbors of points:-
