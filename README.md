@@ -8,7 +8,7 @@
   
     * [Euclidean distance (cdist)](#euclidean-distance---cdist)
 
-* [Shortest Path](#shortest-path)
+* [Dijkstra's Algorithm](#dijkstra's-algorithm)
 
 * [Post Processing](#post-processing)
 
@@ -42,9 +42,7 @@ Path before post-processing            |  Shortest path after path shortcutting
 :-------------------------:|:-------------------------:
 ![KNN_5000_spt](https://github.com/Ritzzer764/2D_motion_planning/assets/114499776/c9749596-9a23-4bea-b5a8-5dc0e3de8ec5)  | ![KNN_5000_opt](https://github.com/Ritzzer764/2D_motion_planning/assets/114499776/f43bdcec-84cd-4cea-9ac6-ae452c052091)
 
-
-## Shortest Path
-### Dijkstra's algorithm 
+## Dijkstra's Algorithm 
 
 ## Post Processing 
 There are two approaches I used to solve this problem : 
