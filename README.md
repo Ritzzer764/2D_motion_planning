@@ -4,7 +4,7 @@
 
 * [Finding Nearest Neighbour](#finding-nearest-neighbour)
   
-    * [K-Nearest Neighbors Algorithm](#k-Nearest_neighbors_algorithm)
+    * [K-Nearest Neighbors Algorithm](#k-nearest_neighbors_algorithm)
   
     * [Euclidean distance (cdist)](#euclidean_distance_(cdist))
 
