@@ -10,9 +10,11 @@ While utilizing the KNN algorithm (Number of Neighbours = 20, radius = 0.4), I f
 ![Cdist 5000](https://github.com/Ritzzer764/2D_motion_planning/assets/114499776/511dc447-32d0-4505-9b77-858e1bcc39a4)
 Although KNN required more points, the network was able to cover a much larger area than cdist due to the number of points as seen above. 
 This is the shortest path for the test case (size_x = 10, size_y = 6, number of obstacles = 5):
-##### Path before post processing
+#### Path before post processing
+
 ![KNN_5000_spt](https://github.com/Ritzzer764/2D_motion_planning/assets/114499776/c9749596-9a23-4bea-b5a8-5dc0e3de8ec5) 
-##### Shortest path after path shortcutting
+
+#### Shortest path after path shortcutting
 ![KNN_5000_opt](https://github.com/Ritzzer764/2D_motion_planning/assets/114499776/f43bdcec-84cd-4cea-9ac6-ae452c052091)
 
 
@@ -25,10 +27,10 @@ I could solve this issue of less area coverage by increasing the number of sampl
 
 This is the shortest path for the test case (size_x = 10, size_y = 6, number of obstacles = 5):
 
-##### Path before post processing
+#### Path before post processing
 ![spt_img_(10, 6, 5)](https://github.com/Ritzzer764/2D_motion_planning/assets/114499776/5d827173-8dd8-437f-9daa-3a2f4b825e2a)
 
-##### Shortest path after path shortcutting
+#### Shortest path after path shortcutting
  ![Opt_img_(10, 6, 5)](https://github.com/Ritzzer764/2D_motion_planning/assets/114499776/e5ee4cce-2540-4a3f-9ee7-9f4adc9c6dac) 
 
 
