@@ -6,6 +6,7 @@ I used two algorithms to find the nearest neighbors of points:-
 * Euclidean distance (cdist) - Slower run-time but requires less number of sample points
 
 ### K-Nearest Neighbors Algorithm
+
 While utilizing the KNN algorithm (Number of Neighbours = 20, radius = 0.4), I found that I had to use more sample points (5000) than cdist to pass all test cases (more pictures are there in the test_images folder).
 ![Cdist 5000](https://github.com/Ritzzer764/2D_motion_planning/assets/114499776/511dc447-32d0-4505-9b77-858e1bcc39a4)
 Although KNN required more points, the network was able to cover a much larger area than cdist due to the number of points as seen above. 
