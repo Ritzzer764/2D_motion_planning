@@ -4,9 +4,9 @@
 
 * [Finding Nearest Neighbour](#finding-nearest-neighbour)
   
-    * [K-Nearest Neighbors Algorithm](#k-nearest_neighbors_algorithm)
+    * [K-Nearest Neighbors Algorithm](#k-nearest-neighbors-algorithm)
   
-    * [Euclidean distance (cdist)](#euclidean_distance_(cdist))
+    * [Euclidean distance (cdist)](#euclidean-distance-(cdist))
 
 * [Shortest Path](#shortest-path)
 
