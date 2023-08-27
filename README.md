@@ -1,8 +1,5 @@
 # 2D_motion_planning
 
-
-
-
 ## Finding Nearest Neighbour
 I used two algorithms to find the nearest neighbors of points:-
 * K-Nearest Neighbors Algorithm - Faster run-time but requires more number of sample points 
