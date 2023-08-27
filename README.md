@@ -6,7 +6,7 @@
   
     * [K-Nearest Neighbors Algorithm](#k-nearest-neighbors-algorithm)
   
-    * [Euclidean distance (cdist)](#euclidean-distance-(cdist))
+    * [Euclidean distance (cdist)](#euclidean-distance---cdist)
 
 * [Shortest Path](#shortest-path)
 
@@ -19,7 +19,7 @@ Probabilistic Roadmap Algorithms serve a crucial role in robotics by facilitatin
 I used two algorithms to find the nearest neighbours of points:-
 * Euclidean distance (cdist) - Requires less number of sample points
 * K-Nearest Neighbors Algorithm - Requires more number of sample points
-### Euclidean distance (cdist)
+### Euclidean distance - cdist
 I found that when utilizing cdist to create the network of nearest neighbours, I only had to use a few samples of points (600) to pass all test cases. 
 This is the network created using 600 points of cdist (Number of Neighbours = 20).
 Although the network does not cover the entire area as seen in the picture below, it is able to pass all test cases.
