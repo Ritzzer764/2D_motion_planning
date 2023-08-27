@@ -9,6 +9,7 @@
 [Post Processing](#post-processing)
 
 ## About
+Probabilistic Roadmap Algorithms serve a crucial role in robotics by facilitating the discovery of collision-free routes between an initial point and a final destination within obstacle-laden maps. Once a path devoid of collisions is established, the integration of a post-processing algorithm, such as the Path Shortcutting algorithm, becomes instrumental. This subsequent step aims to extract the most concise route between the starting point and the target by optimizing the path through sampled points.
 
 ## Finding Nearest Neighbour
 I used two algorithms to find the nearest neighbours of points:-
