@@ -3,9 +3,11 @@
 * [About](#about)
 
 * [Finding Nearest Neighbour](#finding-nearest-neighbour)
-    1)[K-Nearest Neighbors Algorithm](#k-Nearest_neighbors_algorithm)
   
-    2)[Euclidean distance (cdist)](#euclidean_distance_(cdist))
+    * [K-Nearest Neighbors Algorithm](#k-Nearest_neighbors_algorithm)
+  
+    * [Euclidean distance (cdist)](#euclidean_distance_(cdist))
+
 * [Shortest Path](#shortest-path)
 
 * [Post Processing](#post-processing)
