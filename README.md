@@ -10,12 +10,9 @@ While utilizing the KNN algorithm (Number of Neighbours = 20, radius = 0.4), I f
 ![Cdist 5000](https://github.com/Ritzzer764/2D_motion_planning/assets/114499776/511dc447-32d0-4505-9b77-858e1bcc39a4)
 Although KNN required more points, the network was able to cover a much larger area than cdist due to the number of points as seen above. 
 This is the shortest path for the test case (size_x = 10, size_y = 6, number of obstacles = 5):
-#### Path before post processing
-
-![KNN_5000_spt](https://github.com/Ritzzer764/2D_motion_planning/assets/114499776/c9749596-9a23-4bea-b5a8-5dc0e3de8ec5) 
-
-#### Shortest path after path shortcutting
-![KNN_5000_opt](https://github.com/Ritzzer764/2D_motion_planning/assets/114499776/f43bdcec-84cd-4cea-9ac6-ae452c052091)
+Path before post processing            |  Shortest path after path shortcutting
+:-------------------------:|:-------------------------:
+![KNN_5000_spt](https://github.com/Ritzzer764/2D_motion_planning/assets/114499776/c9749596-9a23-4bea-b5a8-5dc0e3de8ec5)  | ![KNN_5000_opt](https://github.com/Ritzzer764/2D_motion_planning/assets/114499776/f43bdcec-84cd-4cea-9ac6-ae452c052091)
 
 
 ### Euclidean distance (cdist)
