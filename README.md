@@ -8,7 +8,7 @@
   
     * [Euclidean distance (cdist)](#euclidean-distance---cdist)
 
-* [Dijkstra's Algorithm](#dijkstra's-algorithm)
+* [Dijkstra's Algorithm](#dijkstra-s-algorithm)
 
 * [Post Processing](#post-processing)
 
